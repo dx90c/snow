@@ -1,0 +1,69 @@
+Hwnd = Plugin.Window.Find(0, "Snowbreak: Containment Zone")
+TracePrint Hwnd
+Call Plugin.Window.Move(Hwnd, 760, 0)
+
+
+Do
+
+
+Delay 1000
+
+Call Plugin.Bkgnd.KeyPress(Hwnd, 69)
+
+Delay 1000
+
+
+FindPic 682,0,1832,694,"C:\Users\dx90c\Pictures\Snow\確認.bmp",0.9,intX,intY
+If intX > 0 And intY > 0 Then 
+
+MoveTo 1550, 300
+LeftClick 1
+
+
+Delay 1000
+MoveTo 1240, 520
+LeftClick 1
+Delay 1000
+
+End If
+
+FindPic 682,0,1832,694,"C:\Users\dx90c\Pictures\Snow\丟棄.bmp",0.9,intX,intY
+If intX > 0 And intY > 0 Then 
+
+MoveTo 1580, 179
+LeftClick 1
+
+
+Delay 1000
+MoveTo 1580, 528
+LeftClick 1
+
+End If
+Delay 1000
+
+FindPic 682,0,1832,694,"C:\Users\dx90c\Pictures\Snow\退出.bmp",0.9,intX,intY
+If intX > 0 And intY > 0 Then 
+
+MoveTo 1250, 520
+LeftClick 1
+
+End If
+
+FindPic 0,0,1920,1080,"C:\Users\dx90c\Pictures\Snow\可獲取.bmp",0.9,intX,intY
+If intX > 0 And intY > 0 Then 
+
+MoveTo 1550, 307
+LeftClick 1
+
+End If
+FindPic 0,0,1920,1080,"C:\Users\dx90c\Pictures\Snow\開始作戰.bmp",0.9,intX,intY
+If intX > 0 And intY > 0 Then 
+
+MoveTo 1650, 530
+LeftClick 1
+
+
+End If
+
+Loop
+
